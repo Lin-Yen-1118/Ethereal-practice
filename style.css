@@ -25,9 +25,9 @@ body {
     height: 44px;
 }
 
-/* * {
-    border: 1px solid red;
-} */
+   * {
+    border: 1px solid blue; 
+}  
 
 /*以下為導覽列*/
 
@@ -224,7 +224,7 @@ h4 {
     display: flex;
 }
 
-/*待處理*/
+
 @media screen and (min-width: 768px) {
     .banner_main {
         display: flex;
@@ -242,7 +242,7 @@ h4 {
     }
 }
 
-/*待處理*/
+
 @media screen and (min-width: 1024px) {
     .banner_main {
         display: flex;
@@ -418,7 +418,8 @@ h4 {
 
 /*以下為text_center*/
 .text_center {
-     background-image: url(images/background.jpg);
+    background-image: url(images/background.jpg);
+    background-size: cover;
     height: 300px;
     color: #ffffff;
     line-height: 35px;
@@ -454,18 +455,29 @@ h4 {
 
 @media screen and (min-width:1024){
     .text_center{
-        display: inline;
-        justify-content: center;
-        align-items: flex-start;
+        display: flex;
+        justify-content:space-around;
+    
+    }
+     .text_center_container{
+        width:50%;
+        text-align:left;
+        display:flex;
         flex-wrap: wrap;
         
+
+       
     }
-    .text_center_container{
-        width: 50%;
+    .text_center_container p{
+        word-wrap:break-word; 
+
     }
+    
     .text_center_wrap{
-        width: 30%;
-    }
+        width:50%;
+        display:flex;
+       
+    } 
    
    
 }
@@ -539,3 +551,226 @@ h4 {
    
     
 }
+
+/*以下為Contact US*/
+
+.contact_us{
+    background-color: rgba(204, 204, 204, 0.15);
+    width: 100%;
+    padding-bottom: 50px;
+   
+
+}
+
+.about_us_inputbox{
+    border-color: transparent;
+    border-bottom: 2px solid #EB233C;
+    line-height:35px;
+    width: 100%;
+}
+ .about_us_input_message{
+    border-color: transparent;
+    border-bottom: 2px solid #EB233C;
+    line-height:35px;
+    width: 100%;
+   
+} 
+
+.contact_us_form{
+    
+    margin-top:40px;
+    margin-bottom:30px;
+}
+.about_us_inputbox .about_us_input_message{
+    height: 60px;
+    width: 100%;
+    background-color:transparent;
+}
+.input_message{
+    height: 140px;
+    width: 100%;
+    margin-top:40px;
+}
+.contact_us_button_wrap{
+    padding-bottom: 50px;
+}
+
+.contact_us_right{
+    display: flex;
+} 
+
+.contact_us_address{
+    display: inline-block;
+    text-align: left;
+    padding-left: 45px;
+   
+}
+
+
+
+.contact_us_address h4{
+    color: #EB233C;
+    font-size: 22px;
+}
+
+.fa{
+    font: normal normal normal 14px/1 FontAwesome;
+    color:#EB233C;
+
+}
+
+.contact_us_address p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+@media (min-width:768px){
+   
+  .contact_us_box_contact{
+      width: 100%;
+      display:flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-direction:row;
+  }
+  .contact_us_left{
+    width: 50%;
+   
+ }
+
+ .contact_us_right{
+    width: 50%;
+     
+ } 
+
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+@media (min-width:1024px){
+    .contact_us_form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;  
+        flex-direction:row;
+        
+    }
+     .contact_us_form_text_input{  
+        display:inline-block;
+        justify-content: space-between;
+        flex-wrap: wrap;  
+        
+    } 
+    
+   
+
+
+
+}    
+
+/*footer*/
+ul{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+.footer{
+    background-color:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width: 100%;
+    margin-top:30px;
+    margin-bottom:30px;
+   
+}
+.footer_swap{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width: 100%;
+}
+.footer_box{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.footer_media{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+.social_media{
+    display: flex;
+   justify-content:center;
+    align-items:center;
+    text-align:center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.social_media li{
+   
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+   
+   
+}
+
+ul.social_media li a{
+    background-color: #222;
+    border-radius: 100%;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    outline: 0 none;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+
+}
+
+.footer_link{
+    color:#EB233C;
+}
+
+@media (min-width:1024px){
+    .footer_swap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .footer_box{
+        width: 31.3333%;
+    }
+    .footer_media{
+        width: 31.3333%;
+    }
+    .footer_bottom{
+        width: 31.3333%;
+    }
