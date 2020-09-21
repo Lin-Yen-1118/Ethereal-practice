@@ -224,7 +224,7 @@ h4 {
     display: flex;
 }
 
-/*待處理*/
+
 @media screen and (min-width: 768px) {
     .banner_main {
         display: flex;
@@ -242,7 +242,7 @@ h4 {
     }
 }
 
-/*待處理*/
+
 @media screen and (min-width: 1024px) {
     .banner_main {
         display: flex;
