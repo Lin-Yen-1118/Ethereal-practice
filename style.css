@@ -12,6 +12,8 @@ li {
 }
 body {
     font-family: "Work Sans", sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/background.jpg);
+    background-repeat:no-repeat;
 }
 .button {
     padding: 12px 35px;
@@ -138,8 +140,7 @@ body {
     background-attachment: fixed;
     height: 500px;
     width: 100%;
-    background-color: #645862;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/background.jpg);
+    /* background-color: #645862; */
     background-repeat: no-repeat;
     background-size: cover;
     cursor: default;
@@ -205,6 +206,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: #ffffff;
 }
 h4 {
     font-family: "Oleo Script Swash Caps", cursive;
@@ -260,6 +262,7 @@ h4 {
 }
 
 .our_work {
+    background-image: none;
     background-color: rgba(235, 213, 235, 0.26);
     display: flex;
     justify-content: center;
@@ -270,6 +273,7 @@ h4 {
 }
 .our_work_wrap {
     width: 100%;
+    background-color: rgba(235, 213, 235, 0.26);
 }
 .our_work h3 {
     border-bottom: 2px solid #eb233c;
@@ -418,8 +422,6 @@ h4 {
 
 /*以下為text_center*/
 .text_center {
-   
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/background.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 300px;
