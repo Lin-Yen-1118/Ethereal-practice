@@ -12,6 +12,13 @@ li {
 }
 body {
     font-family: "Work Sans", sans-serif;
+    /* background-image: linear-gradient(rgba(0,0,0,0.5),url(images/background.jpg);  */
+    background-image:url(images/background.jpg); 
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+   
 }
 .button {
     padding: 12px 35px;
@@ -25,9 +32,9 @@ body {
     height: 44px;
 }
 
-   * {
+    * {
     border: 1px solid blue; 
-}  
+}   
 
 /*以下為導覽列*/
 
@@ -129,24 +136,21 @@ body {
 }
 
 /*以下為banner*/
-* {
-    box-sizing: border-box;
-}
+
 
 .banner {
     text-align: center;
     background-attachment: fixed;
     height: 500px;
     width: 100%;
-    background-color: #645862;
-    background-image: url(images/background.jpg);
+    background-color: RGBA(15, 5, 20, 0.84);
     background-repeat: no-repeat;
     background-size: cover;
     cursor: default;
     color: #ffffff;
     padding: 280px 0 220px;
     padding: 100px 0 100px;
-    margin-bottom: 20px;
+    
 }
 .banner_title {
     display: block;
@@ -188,9 +192,7 @@ body {
 
 /*以下為banner_main*/
 
-* {
-    box-sizing: border-box;
-}
+
 
 p {
     display: block;
@@ -205,6 +207,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: #ffffff;
 }
 h4 {
     font-family: "Oleo Script Swash Caps", cursive;
@@ -255,21 +258,20 @@ h4 {
 
 /*以下為work*/
 
-* {
-    box-sizing: border-box;
-}
 
 .our_work {
-    background-color: rgba(235, 213, 235, 0.26);
+    background-color: rgba(255, 247, 251, 1);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
     text-align: center;
+    
 }
 .our_work_wrap {
     width: 100%;
+     background-color:   rgba(255, 247, 251, 0.26) 
 }
 .our_work h3 {
     border-bottom: 2px solid #eb233c;
@@ -343,9 +345,7 @@ h4 {
 }
 
 /*以下為testimonials*/
-*{
-    box-sizing: border-box;
-}
+
 .our_testimonials {
     
     background-color: #ffffff;
@@ -354,7 +354,8 @@ h4 {
     flex-direction: column;
    align-items: center;
     text-align: center;
-    margin-bottom:50px;
+    margin-bottom:50px; 
+ 
 
 }
 
@@ -418,7 +419,8 @@ h4 {
 
 /*以下為text_center*/
 .text_center {
-    background-image: url(images/background.jpg);
+    background-color: RGBA(15, 5, 20, 0.84);
+    background-attachment: fixed;
     background-size: cover;
     height: 300px;
     color: #ffffff;
@@ -483,8 +485,8 @@ h4 {
 }
 /*以下為about_us*/
 .about_us{
+    background-color: #ffffff;
     display: inline-block;
-   
     align-items: center;
     text-align: center;
     padding:10px;
@@ -538,6 +540,17 @@ h4 {
     color:#eb233c;
     font-weight:500;
 }
+.about_us_input_message{
+    background-color: transparent;
+   
+   
+}
+.contact_us_form{
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
 
 @media (min-width:1024px){
     
@@ -567,12 +580,15 @@ h4 {
     border-bottom: 2px solid #EB233C;
     line-height:35px;
     width: 100%;
+    background-color:transparent;
 }
  .about_us_input_message{
     border-color: transparent;
     border-bottom: 2px solid #EB233C;
     line-height:35px;
     width: 100%;
+    height: 100px;
+    text-align: start;
    
 } 
 
@@ -581,15 +597,26 @@ h4 {
     margin-top:40px;
     margin-bottom:30px;
 }
+
+.contact_us_form_text_input {
+    margin-top:20px;
+}
+.contact_us_form_text{
+    margin-top:20px;
+    height: 100px;
+}
+
+
 .about_us_inputbox .about_us_input_message{
     height: 60px;
     width: 100%;
     background-color:transparent;
+   
 }
 .input_message{
     height: 140px;
     width: 100%;
-    margin-top:40px;
+    margin-top:40px; 
 }
 .contact_us_button_wrap{
     padding-bottom: 50px;
@@ -615,7 +642,7 @@ h4 {
 
 .fa{
     font: normal normal normal 14px/1 FontAwesome;
-    color:#EB233C;
+    color:#ffffff;
 
 }
 
@@ -625,9 +652,7 @@ h4 {
 }
 
 
-*{
-    box-sizing: border-box;
-}
+
 
 @media (min-width:768px){
    
@@ -650,9 +675,7 @@ h4 {
 
 } 
 
-*{
-    box-sizing: border-box;
-}
+
 
 @media (min-width:1024px){
     .contact_us_form{
@@ -774,4 +797,4 @@ ul.social_media li a{
     .footer_bottom{
         width: 31.3333%;
     }
-}
+}    
