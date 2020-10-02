@@ -136,9 +136,7 @@ body {
 }
 
 /*以下為banner*/
-* {
-    box-sizing: border-box;
-}
+
 
 .banner {
     text-align: center;
@@ -194,9 +192,7 @@ body {
 
 /*以下為banner_main*/
 
-* {
-    box-sizing: border-box;
-}
+
 
 p {
     display: block;
@@ -262,9 +258,6 @@ h4 {
 
 /*以下為work*/
 
-* {
-    box-sizing: border-box;
-}
 
 .our_work {
     background-color: rgba(255, 247, 251, 1);
@@ -352,9 +345,7 @@ h4 {
 }
 
 /*以下為testimonials*/
-*{
-    box-sizing: border-box;
-}
+
 .our_testimonials {
     
     background-color: #ffffff;
@@ -661,9 +652,7 @@ h4 {
 }
 
 
-*{
-    box-sizing: border-box;
-}
+
 
 @media (min-width:768px){
    
@@ -686,9 +675,7 @@ h4 {
 
 } 
 
-*{
-    box-sizing: border-box;
-}
+
 
 @media (min-width:1024px){
     .contact_us_form{
