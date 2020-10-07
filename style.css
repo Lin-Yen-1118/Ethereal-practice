@@ -157,7 +157,6 @@ body {
     font-family: "Oleo Script Swash Caps", cursive;
     font-size: 50px;
     font-weight: 500;
-    line-height: 1.1;
     cursor: default;
     width: 100%;
     margin-top: 20px;
@@ -267,6 +266,7 @@ h4 {
     align-items: center;
     width: 100%;
     text-align: center;
+    padding-bottom: 50px;
     
 }
 .our_work_wrap {
@@ -354,7 +354,7 @@ h4 {
     flex-direction: column;
    align-items: center;
     text-align: center;
-    margin-bottom:50px; 
+    padding-bottom:50px; 
  
 
 }
@@ -423,13 +423,13 @@ h4 {
     background-attachment: fixed;
     background-size: cover;
     height: 300px;
-    color: #ffffff;
-    line-height: 35px;
+    color: #ffffff;    
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding:10px;
+    padding:10%;
     padding-top:20px;
+    padding-bottom: 100px;
     width: 100%;
 
     
@@ -439,6 +439,12 @@ h4 {
     display: inline-block;
     justify-content:space-around;
     border-bottom: 2px solid #eb233c;
+    line-height: 35px;
+    font-size: 24px;
+}
+.text_center_container{
+    padding-bottom:30px;
+    padding-right:100px;
 }
   
 .text_center_wrap{
@@ -446,6 +452,7 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
+   
 
 
 }
@@ -458,17 +465,15 @@ h4 {
 @media screen and (min-width:1024){
     .text_center{
         display: flex;
-        justify-content:space-around;
+        justify-content:space-between;
     
     }
-     .text_center_container{
+    .text_center_container{
         width:50%;
         text-align:left;
         display:flex;
         flex-wrap: wrap;
-        
-
-       
+    
     }
     .text_center_container p{
         word-wrap:break-word; 
@@ -478,6 +483,7 @@ h4 {
     .text_center_wrap{
         width:50%;
         display:flex;
+        
        
     } 
    
@@ -489,7 +495,7 @@ h4 {
     display: inline-block;
     align-items: center;
     text-align: center;
-    padding:10px;
+   
     
     flex-wrap: wrap;
     
@@ -571,9 +577,21 @@ h4 {
     background-color: rgba(204, 204, 204, 0.15);
     width: 100%;
     padding-bottom: 50px;
+    
    
 
 }
+.about_us_inner{
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.about_us_discription{
+    width:65%;
+}
+
 
 .about_us_inputbox{
     border-color: transparent;
@@ -613,6 +631,10 @@ h4 {
     background-color:transparent;
    
 }
+.about_us_input_message{
+   
+    resize: none;
+}
 .input_message{
     height: 140px;
     width: 100%;
@@ -620,6 +642,14 @@ h4 {
 }
 .contact_us_button_wrap{
     padding-bottom: 50px;
+    padding-top: 30px;
+}
+.contact_us_button{
+    display: inline-block;
+    justify-content:flex-start;
+    text-align: center;
+   
+
 }
 
 .contact_us_right{
@@ -642,8 +672,13 @@ h4 {
 
 .fa{
     font: normal normal normal 14px/1 FontAwesome;
-    color:#ffffff;
+    color: #EB233C;
+   
 
+}
+.contact_us_address .fa{
+    width: 15px;
+    text-align: center;
 }
 
 .contact_us_address p{
@@ -669,7 +704,8 @@ h4 {
  }
 
  .contact_us_right{
-    width: 50%;
+    width: 40%;
+    padding-top:50px;
      
  } 
 
@@ -677,7 +713,7 @@ h4 {
 
 
 
-@media (min-width:1024px){
+@media (min-width:1024px)(max-width:1024px){
     .contact_us_form{
         width: 100%;
         display: flex;
@@ -691,7 +727,17 @@ h4 {
         flex-wrap: wrap;  
         
     } 
+    .contact_us_left{
+        width: 50%;
+        
+       
+     }
     
+     .contact_us_right{
+        width: 50%;
+        padding-left:50px;
+        
+     } 
    
 
 
@@ -775,6 +821,11 @@ ul.social_media li a{
     transition: all 0.3s ease 0s;
     width: 40px;
 
+}
+
+.social_media .fa{
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #ffffff;
 }
 
 .footer_link{
